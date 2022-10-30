@@ -1,0 +1,6 @@
+[module/ewmh]
+type = internal/xworkspaces
+pin-workspaces = false
+enable-click = false
+enable-scroll = false
+reverse-scroll = true

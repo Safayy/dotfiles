@@ -51,5 +51,10 @@ fi
 #### LAUNCH APPLICATIONS
 nitrogen --restore &
 picom &
+sxhkd &
+exec sh ~/.config/polybar/launch.sh &
 exec bspwm
+
+
+#dbus-run-session bspwm
 
