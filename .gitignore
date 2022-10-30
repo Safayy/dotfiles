@@ -1,3 +1,4 @@
+# untracked dotfiles
 .Xauthority
 .bash_history
 .bash_logout
@@ -7,4 +8,8 @@
 .mozilla
 .ssh
 .viminfo
-repos/*
+
+# untracked directories 
+repos/
+AUR_Builds/
+Downloads/
