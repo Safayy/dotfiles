@@ -1,0 +1,10 @@
+.Xauthority
+.bash_history
+.bash_logout
+.cache
+.local
+.lesshst
+.mozilla
+.ssh
+.viminfo
+repos/*
