@@ -31,8 +31,8 @@ yay -S picom-ibhagwan-git alacritty
 
 ### Additional Applications
 ```
-sudo pacman -S flameshot man firefox mpv code neovim intellij-idea-community-edition qbittorent calibre
-yay -S android-studio notion-app-enhanced prospect-mail-bin teams anki ventoy-bin
+sudo pacman -S flameshot man firefox mpv code neovim intellij-idea-community-edition qbittorent calibre pamixer
+yay -S android-studio notion-app-enhanced prospect-mail-bin teams anki ventoy-bin volumeicon-gtk2
 ```
 ### Themes <br>
 Firefox: Dark [HumbleNewTabPage](https://github.com/ibillingsley/HumbleNewTabPage) <br> 
