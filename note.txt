@@ -1,0 +1,12 @@
+.local/share/Steam/steamapps/common/Hollow\ Knight/hollow_knight.x86_64 -force-opengl
+wine /home/safa/Games/garena/drive_c/Garena/Games/32771/LeagueClient/LeagueClient.exe
+
+sudo fdisk -l
+sudo mount /dev/sdc /media/usb-drive/
+findmnt
+umount /media/usb-drive
+
+pamixer --get-volume
+
+lspci
+lsblk
