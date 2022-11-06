@@ -25,18 +25,16 @@ $ ./install.sh
 ## Applications
 ### Necessary Applications
 ```
-sudo pacman -S pipewire rofi network-manager-applet bluez bluez-utils flameshot man #media-fonts/fontawesome 
-yay -S picom-ibhagwan-git i3-gaps-rounded alacritty
+sudo pacman -S pipewire rofi network-manager-applet bluez bluez-utils
+yay -S picom-ibhagwan-git alacritty
 ```
 
 ### Additional Applications
 ```
-sudo pacman -S firefox mpv
-sudo pacman -S android-studio code neovim intellij-idea-community-edition qBitTorrent calibre
-yay -S notion-app-enhanced prospect-mail teams anki
+sudo pacman -S flameshot man firefox mpv code neovim intellij-idea-community-edition qbittorent calibre pamixer
+yay -S android-studio notion-app-enhanced prospect-mail-bin teams anki ventoy-bin volumeicon-gtk2
 ```
 ### Themes <br>
 Firefox: Dark [HumbleNewTabPage](https://github.com/ibillingsley/HumbleNewTabPage) <br> 
 qBitTorrent: https://draculatheme.com/qbittorrent <br>
 Anki: Dark [MigakuEditor](https://ankiweb.net/shared/info/805891399) [HorizontalSplit](https://ankiweb.net/shared/info/831846358)<br>
-
