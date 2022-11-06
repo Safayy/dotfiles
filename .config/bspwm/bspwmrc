@@ -9,14 +9,15 @@ SECOND_MONITOR=$(xrandr | grep connected | awk '{i++}i==2'| awk '{print $1}')
 sxhkd &
 
 # Configure Monitors
-if [ "$(xrandr | grep -sw 'connected' | wc -l)" = "2" ]; then
-  bspc monitor $(bspc query -M | sed -n 1p) -d I
-  bspc monitor $(bspc query -M | sed -n 2p) -d II III IV V VI VII VIII IX X
+#if [ "$(xrandr | grep -sw 'connected' | wc -l)" = "2" ]; then
+#  bspc monitor $(bspc query -M | sed -n 1p) -d I
+#  bspc monitor $(bspc query -M | sed -n 2p) -d II III IV V VI VII VIII IX X
   #Set Monitors Side and output 
-  xrandr --output $SECOND_MONITOR --$SECOND_MONITOR_SIDE-of $PRINCIPAL  
-else
-  bspc monitor -d I II III IV V VI VII VIII IX X 
-fi
+#  xrandr --output $SECOND_MONITOR --$SECOND_MONITOR_SIDE-of $PRINCIPAL  
+#else
+  bspc monitor eDP-1 -d I II III IV V VI VII VIII IX X &
+  startup
+#fi
 
 bspc config border_width         2
 bspc config window_gap          12
