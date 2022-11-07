@@ -25,13 +25,13 @@ $ ./install.sh
 ## Applications
 ### Necessary Applications
 ```
-sudo pacman -S pipewire rofi network-manager-applet bluez bluez-utils
+sudo pacman -Syu pipewire rofi network-manager-applet bluez bluez-utils
 yay -S picom-ibhagwan-git alacritty
 ```
 
 ### Additional Applications
 ```
-sudo pacman -S flameshot man firefox mpv code neovim intellij-idea-community-edition qbittorent calibre pamixer
+sudo pacman -Syu flameshot man firefox mpv code neovim intellij-idea-community-edition qbittorent calibre pamixer
 yay -S android-studio notion-app-enhanced prospect-mail-bin teams anki ventoy-bin volumeicon-gtk2
 ```
 ### Themes <br>
