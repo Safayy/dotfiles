@@ -1,5 +1,5 @@
 # Dotfiles
-Dotfiles for my daily driver linux operating system. <br>
+Dotfiles for my daily driver linux operating system <br>
 <b>OS</b>: Arch<br>
 <b>WM</b>: bspwm<br>
 <b>Compositor</b>: picom<br>
