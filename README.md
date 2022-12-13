@@ -1,6 +1,6 @@
 # Dotfiles
 Dotfiles for my daily driver linux system <br>
-<b>OS</b>: Arch<br>
+<b>OS</b>: Arch Linux<br>
 <b>WM</b>: bspwm<br>
 <b>Compositor</b>: picom<br>
 <b>Launcher</b>: rofi<br>
