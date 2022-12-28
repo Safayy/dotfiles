@@ -2,13 +2,19 @@
 # wm independent hotkeys
 #
 
+XF86AudioRaiseVolume
+    pamixer -i 5
+XF86AudioLowerVolume
+    pamixer -d 5
+XF86AudioMute
+    pamixer -t
 # terminal emulator
 super + Return
-	urxvt
+	alacritty
 
 # program launcher
 super + @space
-	dmenu_run
+	rofi -show drun -show-icons #dmenu_run
 
 # make sxhkd reload its configuration files:
 super + Escape

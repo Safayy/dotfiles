@@ -10,3 +10,20 @@ pamixer --get-volume
 
 lspci
 lsblk
+
+pacman -Q --help, pacman -S --help and pacman -F --help
+
+bspc desktop X --to-monitor eDP-1
+docker exec -it mariadbprac bash
+wineserver -k
+
+safa@192.168.68.168
+alsactl 
+setxkbmap -option altwin:swap_lalt_lwin
+
+figlet
+pipes.sh
+cava
+cmus
+wine /home/safa/Games/garena/drive_c/Garena/Games/32771/LeagueClient/LeagueClientUx.exe --riotclient-app-port=36587 --riotclient-auth-token=8r4nqnKkwmrc0_vxqK1MUg --riotclient-garena --no-rads --disable-self-update --disable-patching --locale=en_SG --servers.chat.chat_host=sg1.chat.si.riotgames.com --servers.lcds.lcds_host=prod.lol.garenanow.com --servers.lcds.login_queue_url=https://lq.lol.garenanow.com/login-queue/rest/queues/lol --region=SG --parent-client=GarenaPC --remoting-auth-token=ZRWfTLgyHNUgQGLG7BPsKQ --app-port=36805 --install-directory=C:\Garena\Games\32771\LeagueClient --app-name=LeagueClient --ux-name=LeagueClientUx --ux-helper-name=LeagueClientUxHelper --log-dir=LeagueClient Logs --crash-reporting= --crash-environment=SG_GarenaPC --app-log-file-path=C:/Garena/Games/32771/LeagueClient/../Game/Logs/LeagueClient Logs/2022-11-05T20-47-45_1248_LeagueClient.log --app-pid=1248 --output-base-dir=C:/Garena/Games/32771/LeagueClient/../Game --no-proxy-server --ignore-certificate-errors
+notify-send "Plugged in power"

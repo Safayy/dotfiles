@@ -1,59 +1,40 @@
 #! /bin/sh
-
-SECOND_MONITOR_SIDE="rigth"
-
-#Get Monitors
-PRINCIPAL=$(xrandr | grep primary | awk '{print $1}')
-SECOND_MONITOR=$(xrandr | grep connected | awk '{i++}i==2'| awk '{print $1}')
-
+## BSPWM Configurations
 sxhkd &
+bspc monitor eDP-1 -d             &
+bspc config border_width        1	        &
+bspc config window_gap          10	        &
+bspc config right_padding       55	        &
+bspc config split_ratio         0.52	    &
+bspc config borderless_monocle  true	    &
+bspc config gapless_monocle     true	    &
+nitrogen --restore                          &
 
-# Configure Monitors
-#if [ "$(xrandr | grep -sw 'connected' | wc -l)" = "2" ]; then
-#  bspc monitor $(bspc query -M | sed -n 1p) -d I
-#  bspc monitor $(bspc query -M | sed -n 2p) -d II III IV V VI VII VIII IX X
-  #Set Monitors Side and output 
-#  xrandr --output $SECOND_MONITOR --$SECOND_MONITOR_SIDE-of $PRINCIPAL  
-#else
-  bspc monitor eDP-1 -d I II III IV V VI VII VIII IX X &
-  startup
-#fi
+## Tray programs
+killall tint2       ;
+killall cbatticon   ;
+killall volumeicon  ;
+tint2               &
+nm-applet           &
+volumeicon          &
+blueman-manager     &
+batsignal           &
+flameshot           &
+cbatticon           &
+qpwgraph            &
 
-bspc config border_width         2
-bspc config window_gap          12
+## Autostart programs
+bspc rule -a kitty          --one-shot  desktop='^1' ; kitty &
+bspc rule -a code           --one-shot  desktop='^2' ; code &
+bspc rule -a firefox        --one-shot  desktop='^3' ; firefox &
+bspc rule -a anki           --one-shot  desktop='^4' ; anki &
+bspc rule -a qbittorrent    --one-shot  desktop='^6' ; qbittorrent &
+bspc rule -a kitty          --one-shot  desktop='^6' ; kitty &
+bspc rule -a steam          --one-shot  desktop='^7' ; steam & sleep 20 ; #sleep to get both windows
+bspc rule -a notion-app-enhanced --one-shot desktop='^8' ; notion-app-enhanced &
+bspc rule -a prospect-mail  --one-shot  desktop='^9' ; prospect-mail &
+bspc rule -a discord        --one-shot  desktop='^9'; discord &
 
-bspc config split_ratio          0.52
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
-
-#bspc rule -a Gimp desktop='^8' state=floating follow=on
-#bspc rule -a Chromium desktop='^2'
-#bspc rule -a mplayer2 state=floating
-#bspc rule -a Kupfer.py focus=on
-#bspc rule -a Screenkey manage=off
-
-bspc rule -a alacritty desktop='^1' follow=off -o
-bspc rule -a prospect-mail desktop='^9' follow=off -o
-bspc rule -a notion-app-enhanced desktop='^10' follow=off -o
-bspc rule -a qbittorrent desktop='^8' follow=off -o
-bspc rule -a steam desktop='^7' follow=off -o
-bspc rule -a firefox desktop='^1' follow=off -o
-bspc rule -a discord desktop='^8' follow=off -o
-#bspc rule -a alacritty desktop='^1'
-
-
-## run programs
-nm-applet &
-cbatticon &
-volumeicon &
-batsignal &
-flameshot &
-qpwgraph #&
-#qbittorrent &
-#discord &
-#alacritty &
-#notion-app-enhanced &
-#firefox &
-#prospect-mail
-
-
+## Fix taskbar fullscreen
+xdo above -t "$(xdo id -N Bspwm -n root | sort | head -n 1)" $(xdo id -n tint2) ;
+notify-send "Workspace setup completed "

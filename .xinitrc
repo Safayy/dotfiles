@@ -49,12 +49,15 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 #### LAUNCH APPLICATIONS
-nitrogen --restore &
-picom &
-sxhkd &
-exec sh ~/.config/polybar/launch.sh &
+#nitrogen --restore &
+#picom &
+#sxhkd &
+#setxkbmap -option caps:escape &
+#exec sh ~/.config/polybar/launch.sh &
 exec bspwm
 
 
 #dbus-run-session bspwm
 
+#setxkbmap -option altwin:swap_lalt_lwin
+#setxkbmap -option altwin:swap_lalt_lwin

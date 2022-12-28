@@ -1,0 +1,42 @@
+<!DOCTYPE patchbay>
+<patchbay version="0.3.6" name="main">
+ <items>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output port="Firefox:output_FL" node="Firefox"/>
+   <input port="Virtual_microphone_MIC:input_FL" node="Virtual_microphone_MIC"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output port="Firefox:output_FR" node="Firefox"/>
+   <input port="PipeWire ALSA [obs]:input_FR" node="obs/PipeWire ALSA [obs]"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output port="Skype:output_FR" node="Skype"/>
+   <input port="Virtual_microphone_MIC:input_FR" node="Virtual_microphone_MIC"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output port="Firefox:output_FR" node="Firefox"/>
+   <input port="OBS:input_FR" node="OBS"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output port="Firefox:output_FL" node="Firefox"/>
+   <input port="PipeWire ALSA [obs]:input_FL" node="obs/PipeWire ALSA [obs]"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output port="Skype:output_FL" node="Skype"/>
+   <input port="Virtual_microphone_MIC:input_FL" node="Virtual_microphone_MIC"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output port="mpv:output_FL" node="mpv"/>
+   <input port="Virtual_microphone_MIC:input_FL" node="Virtual_microphone_MIC"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output port="Firefox:output_FL" node="Firefox"/>
+   <input port="OBS:input_FL" node="OBS"/>
+  </item>
+  <item port-type="pipewire-audio" node-type="pipewire">
+   <output port="mpv:output_FR" node="mpv"/>
+   <input port="Virtual_microphone_MIC:input_FR" node="Virtual_microphone_MIC"/>
+  </item>
+ </items>
+</patchbay>
+
