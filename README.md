@@ -1,15 +1,16 @@
 # Dotfiles
 Dotfiles for my daily driver linux system <br>
-<b>OS</b>: Arch Linux<br>
+<b>OS</b>: Arch<br>
 <b>WM</b>: bspwm<br>
 <b>Compositor</b>: picom<br>
 <b>Launcher</b>: rofi<br>
-<b>Terminal</b>: alacritty<br>
+<b>Terminal</b>: kitty<br>
 <b>Editor</b>: neovim<br>
 <b>Video</b>: mpv<br>
 
 ## Screenshots
-![image](https://user-images.githubusercontent.com/61148588/196002570-410c990b-dd84-4e90-bde0-1b67f66828ec.png)
+![image](https://user-images.githubusercontent.com/61148588/209897953-583e1508-e5dd-4920-91f5-651258417ab8.png)
+
 ## Installation
 Clone the dotfiles repository
 ```
