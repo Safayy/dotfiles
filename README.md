@@ -39,3 +39,4 @@ yay -S android-studio notion-app-enhanced prospect-mail-bin teams anki ventoy-bi
 Firefox: Dark [HumbleNewTabPage](https://github.com/ibillingsley/HumbleNewTabPage) <br> 
 qBitTorrent: https://draculatheme.com/qbittorrent <br>
 Anki: Dark [MigakuEditor](https://ankiweb.net/shared/info/805891399) [HorizontalSplit](https://ankiweb.net/shared/info/831846358)<br>
+BeautifulDiscord
