@@ -18,7 +18,7 @@ $ cd ~
 $ git clone https://github.com/JDevlieghere/dotfiles.git
 $ cd dotfiles
 ```
-Use the install script
+Use the install script (TODO)
 ```
 $ ./install.sh
 ```
