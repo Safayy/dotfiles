@@ -1,4 +1,4 @@
-# Dotfiles
+# Dotfiles (Old)
 Dotfiles for my daily driver linux system <br>
 <b>OS</b>: Arch Linux<br>
 <b>WM</b>: bspwm<br>
