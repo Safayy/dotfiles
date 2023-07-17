@@ -4,7 +4,7 @@ alias xselci='xsel --clibboard --input' #copy
 alias xselco='xsel --clibpard --output' #paste
 
 alias connect.css="ssh root@pi.local"
-alias connect.work="ssh michael@workbox.local"
+alias connect.work="ssh safa@safa.dev"
 alias connect.homeserver="ssh safa@192.168.68.168"
 
 alias externalip="curl -s checkip.dyndns.org | sed 's/[^0-9.]//g'"
