@@ -15,7 +15,7 @@ Dotfiles for my daily driver linux system <br>
 Clone the dotfiles repository
 ```
 $ cd ~
-$ git clone https://github.com/JDevlieghere/dotfiles.git
+$ git clone https://github.com/Safayy/dotfiles.git
 $ cd dotfiles
 ```
 Use the install script
